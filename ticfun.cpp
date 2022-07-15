@@ -10,19 +10,13 @@ void is_winning(std::string board, char p1, char p2)
 {
     // Single index using the columns straight down, left to right
     cout << "Let's settle the score...\n";
-    int flag = 0;
     std::string combo;
-    /*for (int i = 0; i < combo.size(); i++)
-    {
 
-    }*/
-
-    /*Case 1
+    /* The board
     012
     345
     678
     */
-    //cout << board[0] << board[1] << board[2] << endl;
     char check = 'Q';
 
     if ((board[0] == board[1] && board[1] == board[2]))
@@ -30,7 +24,7 @@ void is_winning(std::string board, char p1, char p2)
     else if ((board[3] == board[4] && board[4] == board[5]))
         check = board[3];
     else if ((board[6] == board[7] && board[7] == board[8]))
-       check = board[6];
+        check = board[6];
     else if ((board[0] == board[3] && board[3] == board[6]))
         check = board[0];
     else if ((board[1] == board[4] && board[4] == board[7]))
@@ -53,68 +47,8 @@ void is_winning(std::string board, char p1, char p2)
         exit(0);
     }
 
-
-/*Case 1
-ZZZ
-456
-789
-*/
-
-/*Case 2
-123
-ZZZ
-789
-*/
-
-/*Case 3
-123
-456
-ZZZ
-*/
-
-/*Case 4
-Z23
-Z56
-Z89
-*/
-
-/*Case 5
-1Z3
-4Z6
-7Z9
-*/
-
-/*Case 6
-12Z
-45Z
-78Z
-*/
-
-/*Case 7
-12Z
-4Z6
-Z89
-*/
-
-/*Case 8
-Z23
-4Z6
-Z8Z
-*/
-cout << "Nobody has won yet.\n";
-return;
-/*if (flag == 0){
     cout << "Nobody has won yet.\n";
     return;
-}
-else if (flag == 1){
-    cout << "Looks like player 1 has won!\n";
-    return;
-}
-else if (flag == 2){
-    "Looks like player 2 has won!\n";
-    return;
-}*/
 }
 
 std::string choice_loop(std::string board, char first, char second)
@@ -263,7 +197,7 @@ std::string choice_loop(std::string board, char first, char second)
 
             } // This is the end of a large else statement, when the number played is not a repeat
         }     // This is the end of the while loop for tries<3
-        //cout << "Round " << i + 1 << " ends.\n";
+        // cout << "Round " << i + 1 << " ends.\n";
 
         // Showing the board to the player before the next round
         for (int i = 0; i < board.size(); i++)
@@ -285,7 +219,7 @@ std::string choice_loop(std::string board, char first, char second)
 
 std::string make_move(std::string board, char p1, char p2)
 {
-    //cout << "Looks like Player 1 has " << p1 << " and Player 2 has " << p2 << ".\n";
+    // cout << "Looks like Player 1 has " << p1 << " and Player 2 has " << p2 << ".\n";
     cout << "Who will go first, Player 1 or 2?\n";
     char first;
 
