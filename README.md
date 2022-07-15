@@ -5,7 +5,7 @@ Command line game for two players! Play the classic tic tac toe.
 
 Choose your letters and who goes first:
 
-![image](https://user-images.githubusercontent.com/90727832/179137453-14c64cd4-c06f-4e60-b817-3d2e3685436a.png)
+![image](https://user-images.githubusercontent.com/90727832/179142835-cdeb3962-07e8-4e43-ae32-4da843c2f721.png)
 
 Then start playing! Follow the grid. You'll be able to know the previous moves played, and can win before the board is even full.
 
